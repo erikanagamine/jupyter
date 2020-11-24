@@ -1,7 +1,4 @@
-# jupyter
-
-Jupyter on ubuntu: How to install
-
+# How to install Jupyter Notebook
 
 1) update your OS packages
 ```
@@ -526,3 +523,25 @@ Installing collected packages: ipython-genutils, traitlets, jupyter-core, python
   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
 Successfully installed Send2Trash-1.5.0 argon2-cffi-20.1.0 async-generator-1.10 backcall-0.2.0 bleach-3.2.1 cffi-1.14.3 decorator-4.4.2 defusedxml-0.6.0 ipykernel-5.3.4 ipython-7.19.0 ipython-genutils-0.2.0 ipywidgets-7.5.1 jedi-0.17.2 jupyter-1.0.0 jupyter-client-6.1.7 jupyter-console-6.2.0 jupyter-core-4.7.0 jupyterlab-pygments-0.1.2 mistune-0.8.4 nbclient-0.5.1 nbconvert-6.0.7 nbformat-5.0.8 nest-asyncio-1.4.3 notebook-6.1.5 packaging-20.4 pandocfilters-1.4.3 parso-0.7.1 pickleshare-0.7.5 prometheus-client-0.9.0 prompt-toolkit-3.0.8 ptyprocess-0.6.0 pycparser-2.20 pygments-2.7.2 pyparsing-2.4.7 python-dateutil-2.8.1 pyzmq-20.0.0 qtconsole-5.0.0 qtpy-1.9.0 terminado-0.9.1 testpath-0.4.4 tornado-6.1 traitlets-5.0.5 wcwidth-0.2.5 webencodings-0.5.1 widgetsnbextension-3.5.1
 ```
+
+6) restart your session and connect to Jupyter
+
+```
+ubuntu@enagamine:~$ jupyter notebook
+[I 02:40:46.152 NotebookApp] Writing notebook server cookie secret to /home/ubuntu/.local/share/jupyter/runtime/notebook_cookie_secret
+[I 02:40:46.538 NotebookApp] Serving notebooks from local directory: /home/ubuntu
+[I 02:40:46.538 NotebookApp] Jupyter Notebook 6.1.5 is running at:
+[I 02:40:46.538 NotebookApp] http://localhost:8888/?token=26039c555115e739566dbf34195b94bb97d5df5cb8991a0a
+[I 02:40:46.538 NotebookApp]  or http://127.0.0.1:8888/?token=26039c555115e739566dbf34195b94bb97d5df5cb8991a0a
+[I 02:40:46.538 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 02:40:46.542 NotebookApp] No web browser found: could not locate runnable browser.
+[C 02:40:46.542 NotebookApp]
+
+    To access the notebook, open this file in a browser:
+        file:///home/ubuntu/.local/share/jupyter/runtime/nbserver-20959-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=26039c555115e739566dbf34195b94bb97d5df5cb8991a0a
+     or http://127.0.0.1:8888/?token=26039c555115e739566dbf34195b94bb97d5df5cb8991a0a
+[I 02:41:10.937 NotebookApp] 302 GET /?token=26039c555115e739566dbf34195b94bb97d5df5cb8991a0a (127.0.0.1) 0.60ms
+```
+
